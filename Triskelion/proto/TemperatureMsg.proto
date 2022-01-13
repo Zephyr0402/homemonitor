@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package intelligence;
+
+option java_multiple_files = true;
+option java_package = "com.example.intelligence.protos";
+option java_outer_classname = "IntelligenceProtos";
+
+message TemperatureMsg {
+  float temperatureLevel = 1;
+  int32 metricType = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package intelligence;
+
+option java_multiple_files = true;
+option java_package = "com.example.intelligence.protos";
+option java_outer_classname = "IntelligenceProtos";
+
+message IntelligenceMsg {
+  bytes messageID = 1;
+  bytes payload = 2;
+  fixed64 checkSum = 3;
+}
+

@@ -1,4 +1,7 @@
 {
-  "vault": "127.0.0.1",
-  "lighthouse": ""
+  "vaultAddress": "127.0.0.1",
+  "vaultPort": "27017",
+  "lighthouse": "",
+  "triskelionPort": "4445",
+  "lighthousePort": "4446"
 }

@@ -4,7 +4,7 @@ package intelligence;
 
 option java_multiple_files = true;
 option java_package = "protos";
-option java_outer_classname = "IntelligenceProtos";
+option java_outer_classname = "SensorProtos";
 
 // dataType: temperature data 0x01;
 

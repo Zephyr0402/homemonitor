@@ -4,9 +4,12 @@ package intelligence;
 
 option java_multiple_files = true;
 option java_package = "protos";
-option java_outer_classname = "IntelligenceProtos";
+option java_outer_classname = "TemperatureProtos";
+
+// metricType: 0x01 Celsius; 0x02 Fahrenheit
 
 message TemperatureMsg {
   float temperatureLevel = 1;
-  int32 metricType = 2;
+  float humidityLevel = 2;
+  int32 metricType = 3;
 }

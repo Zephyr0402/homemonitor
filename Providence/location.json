@@ -1,5 +1,5 @@
 {
-  "triskelionAddress": "127.0.0.1",
+  "triskelionAddress": "192.168.1.87",
   "triskelionPort": "4445",
   "providencePort": "9999"
 }

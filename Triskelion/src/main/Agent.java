@@ -19,9 +19,9 @@ public class Agent extends Thread {
     private boolean running;
     private static final FluentLogger logger = FluentLogger.forEnclosingClass();
 
-    public Agent() throws SocketException {
+    public Agent(Vault v) throws SocketException {
         socket = new DatagramSocket(Integer.parseInt(Slingshot.getTriskelionPort()));
-        vault = new Vault("vault");
+        vault = v;
     }
 
     /**

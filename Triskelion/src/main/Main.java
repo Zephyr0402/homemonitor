@@ -9,7 +9,8 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) throws SocketException {
-        Agent agent = new Agent();
+        Vault vault = new Vault("vault");
+        Agent agent = new Agent(vault);
         SpringApplication app = new SpringApplication(Slingshot.class);
         app.setDefaultProperties(Collections.singletonMap("server.port", Slingshot.getLighthousePort()));
         agent.start();

@@ -9,8 +9,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Sending message to Vault and Lighthouse*/
 @SpringBootApplication
 @RestController
+@Configuration
 public class Slingshot {
     private static String vaultAddress = "";
     private static String vaultPort = "";
@@ -48,6 +51,7 @@ public class Slingshot {
 
     @GetMapping("/getTemperatureInfo")
     public String getTemperatureInfo() {
+
         return "hello";
     }
 
